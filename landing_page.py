@@ -1,9 +1,21 @@
 import sys
 from PySide2.QtWidgets import *
+from PyQt5.QtCore import *
+
+class LandingThread(QThread):
+    def __init__(self):
+        super(LandingThread, self).__init__()
+
+LandingStartExecution = LandingThread()
 
 class Landing(QMainWindow):
     def __init__(self):
         super().__init__()
+
+
+    def startLandingTask(self):
+        LandingStartExecution.start()
+
 
 
 app = QApplication(sys.argv)
