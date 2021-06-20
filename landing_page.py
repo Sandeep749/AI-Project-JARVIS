@@ -13,6 +13,7 @@ class Landing(QMainWindow):
         super().__init__()
 
 
+    #This function is for running GUIs or GIFs
     def startLandingTask(self):
         LandingStartExecution.start()
 
