@@ -10,3 +10,5 @@ class Register(QMainWindow):
 register_page = Register()
 register_page.show()
 # exit(app.exec_())
+
+
